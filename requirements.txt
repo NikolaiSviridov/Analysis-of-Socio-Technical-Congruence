@@ -1,0 +1,6 @@
+pygithub~=1.53
+pathlib~=1.0.1
+progressbar2
+pygit2
+numpy~=1.19.1
+pyvis
