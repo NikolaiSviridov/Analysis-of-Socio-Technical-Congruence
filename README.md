@@ -82,7 +82,7 @@ between users.
 | userId2 |    5    |    8    |    0    | ... |
 | userId3 |    3    |    0    |    3    | ... |
 |   ...   |   ...   |   ...   |   ...   | ... |
-
+
 ## `FileCongruenceGraph`
 Class for creating file congruence graph. Nodes representing users. Edge exists between nodes if users got common changed files. Edge color and width depends on number of common files between users. Graph is formed based on result matrix from `FilesConguence`. Result will be saved as `*.html` file and opened in default browser.
 
