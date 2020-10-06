@@ -40,7 +40,7 @@ At root directory you can find ready to go `main.py` file.
 
 As the result you'll get interactive graph as below.
 
-![example]()     
+![example](https://raw.githubusercontent.com/NikolaiSviridov/Analysis-of-Socio-Technical-Congruence/main/assets/images/graph_example.png)     
 
 Choose node to highlight all edges from it. By holding cursor on node you'll get its neighbors 
 and number of common files in DESC order.
