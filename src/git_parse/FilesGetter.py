@@ -38,7 +38,7 @@ class FilesGetter:
     def __init_local_repo(self, local_repo_path, remote_repo_https):
         """
         Init local repository by using pygit2 lib. If a folder empty it'll clone repository to it, otherwise
-        continue with existing folder as repository. If a folder dosn't exists raise exception.
+        continue with existing folder as repository. If a folder doesn't exists raise exception.
 
         :param local_repo_path: path of local repository
         :param remote_repo_https: https of remote repository
@@ -62,7 +62,8 @@ class FilesGetter:
         :param remote_repo_name: remote repository name must be in 'facebook/react' format
         """
         self.token = token
-        self.remote_repo = Github(token).get_repo(remote_repo_name)
+        g = Github(token)
+        self.remote_repo = g.get_repo(remote_repo_name)
 
     def __get_first_n_top_contributors(self, n=50):
         return self.remote_repo.get_stats_contributors()[-n:]
@@ -76,7 +77,7 @@ class FilesGetter:
         id_to_user
         user_files_ids
 
-        :param n: number of top contributers
+        :param n: number of top contributors
         :param save_json: boolean flag if you need to save results in json format
         """
         file_id = 0
